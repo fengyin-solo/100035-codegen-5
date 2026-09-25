@@ -149,6 +149,18 @@ class RepairEntry(BaseModel):
     field_6: str | None = None  # 验收人员
     field_7: str | None = None  # 处理状态
 
+class InsuranceClaimEntry(BaseModel):
+    """保险理赔备案明细结构。"""
+
+    field_0: str | None = None  # 理赔报案号
+    field_1: str | None = None  # 设备编号
+    field_2: str | None = None  # 设备类型
+    field_3: str | None = None  # 出险时间
+    field_4: str | None = None  # 保单号
+    field_5: str | None = None  # 赔付上限
+    field_6: str | None = None  # 申报赔付金额
+    field_7: str | None = None  # 理赔状态
+
 class SparepartEntry(BaseModel):
     """备件领用单明细结构。"""
 

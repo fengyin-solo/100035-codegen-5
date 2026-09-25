@@ -16,6 +16,7 @@ from app.routers import cleaning as router_cleaning
 from app.routers import inspection as router_inspection
 from app.routers import defect as router_defect
 from app.routers import repair as router_repair
+from app.routers import insurance as router_insurance
 from app.routers import sparepart as router_sparepart
 from app.routers import generation as router_generation
 from app.routers import curtail as router_curtail
@@ -25,4 +26,4 @@ from app.routers import contractor as router_contractor
 from app.routers import training as router_training
 from app.routers import settlement as router_settlement
 
-ROUTERS = [router_station, router_array, router_inverter, router_combiner, router_stringmon, router_irradiance, router_cleaning, router_inspection, router_defect, router_repair, router_sparepart, router_generation, router_curtail, router_alarm, router_permit, router_contractor, router_training, router_settlement]
+ROUTERS = [router_station, router_array, router_inverter, router_combiner, router_stringmon, router_irradiance, router_cleaning, router_inspection, router_defect, router_repair, router_insurance, router_sparepart, router_generation, router_curtail, router_alarm, router_permit, router_contractor, router_training, router_settlement]
