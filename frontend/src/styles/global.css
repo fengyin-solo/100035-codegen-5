@@ -33,3 +33,25 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.warn-text { color: #b54708; }
+.ok-text { color: #067647; }
+.badge { display: inline-block; border-radius: 10px; padding: 1px 8px; font-size: 12px; line-height: 18px; }
+.badge-dup { background: #fef3f2; color: #b42318; border: 1px solid #fda29b; margin-left: 6px; }
+.badge-first { background: #ecfdf3; color: #067647; border: 1px solid #73e2a3; margin-left: 6px; }
+.badge-over { background: #fffaeb; color: #b54708; border: 1px solid #fedf89; margin-left: 6px; }
+.cell-strong { font-weight: 600; }
+.modal-mask { position: fixed; inset: 0; background: rgba(16, 24, 40, 0.45); display: flex; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; z-index: 50; }
+.modal { background: #fff; border-radius: 10px; width: 680px; max-width: 100%; padding: 18px 20px; box-shadow: 0 12px 40px rgba(16, 24, 40, 0.2); }
+.modal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.modal-head h3 { margin: 0; font-size: 16px; }
+.modal-foot { display: flex; justify-content: flex-end; gap: 8px; margin-top: 14px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; }
+.form-grid .full { grid-column: 1 / -1; }
+.form-field label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+.form-field input, .form-field select, .form-field textarea { width: 100%; border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font: inherit; }
+.form-field textarea { min-height: 56px; resize: vertical; }
+.readonly-box { background: #f8fafc; border: 1px dashed var(--border); border-radius: 6px; padding: 6px 10px; font-size: 13px; }
+.hint-line { font-size: 12px; margin: 2px 0; }
+.detail-list { display: grid; grid-template-columns: 130px 1fr; row-gap: 6px; font-size: 13px; }
+.detail-list dt { color: var(--muted); }
+.detail-list dd { margin: 0; }

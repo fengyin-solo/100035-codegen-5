@@ -19,6 +19,8 @@ class ActionResult(BaseModel):
     ok: bool
     message: str
     entry: dict[str, Any] | None = None
+    # 非阻断提示：例如赔付金额超过保单口径，需要业务侧知悉但不影响保存。
+    warnings: list[str] = Field(default_factory=list)
 
 
 class EntryPayload(BaseModel):
@@ -244,3 +246,15 @@ class SettlementEntry(BaseModel):
     field_5: str | None = None  # 应结金额
     field_6: str | None = None  # 已付金额
     field_7: str | None = None  # 结算状态
+
+class InsuranceEntry(BaseModel):
+    """保险理赔备案明细结构。"""
+
+    field_0: str | None = None  # 理赔单号
+    field_1: str | None = None  # 保单号
+    field_2: str | None = None  # 设备编号
+    field_3: str | None = None  # 设备类型
+    field_4: str | None = None  # 报案日期
+    field_5: str | None = None  # 出险原因
+    field_6: str | None = None  # 赔付金额
+    field_7: str | None = None  # 理赔状态

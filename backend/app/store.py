@@ -28,8 +28,12 @@ class Store:
         return None
 
     def overview(self) -> dict[str, object]:
+        # 参照数据（资产台账、保单）只给理赔登记取数用，不计入业务卡片与看板。
+        reference_tables = {"insurance_asset", "insurance_policy"}
         modules: list[dict[str, object]] = []
         for name in self.module_names():
+            if name in reference_tables:
+                continue
             rows = self.rows(name)
             modules.append({
                 "name": name,
